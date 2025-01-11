@@ -1,0 +1,37 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.carrusel-container {
+  background-color: v.$azul;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem 0; // Agregar margen
+
+  .carrusel-texto {
+    position: relative;
+    height: 80px; // Un poco más alto
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .texto {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      font-family: v.$fuente-principal;
+      color: v.$blanco;
+      font-size: 4rem; // Texto más grande
+      font-weight: bold; // Más negrita
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+
+      &.activo {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+

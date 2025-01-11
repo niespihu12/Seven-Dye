@@ -29,7 +29,7 @@ ul {
 }
 
 .test {
-    background: rgba($gray, .8);
+    background: rgba(v.$blanco, .8);
     color: white;
     padding: 4rem 3rem 2rem 3rem;
     text-align: center;
@@ -116,7 +116,7 @@ ul {
 .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
     transition: transform 0.3s;
     transform: scale(1);
-    background: rgba($gray, .8);
+    background: rgba(v.$blanco, .8);
 }
 
 /* slide when active/center */
@@ -124,3 +124,4 @@ ul {
     transform: scale(1.25);
     background: #444;
 }
+

@@ -6,7 +6,7 @@ import gulpSass from 'gulp-sass'
 const sass = gulpSass(dartSass) // se une sass y gulpSass
 
 export function js(done){
-    src('src/js/app.js')
+    src('src/js/**/*.js')
         .pipe(dest('build/js'))
     done()
 }
@@ -21,7 +21,7 @@ export function css(done){
 
 export function dev() {
     watch('src/scss/**/*.scss', css) // busca todos los archivos dentro de la carpeta scss
-    watch('src/js/**/*.js', js)
+    watch('src/js/**/*.js', js) // busca todos los archivos en la carpeta js
 }
 
 //parallel comienza las tareas al mismo tiempo y series en tiempos distintos y por espacios

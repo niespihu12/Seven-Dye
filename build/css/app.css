@@ -577,7 +577,7 @@ ul {
 }
 
 .test {
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   color: white;
   padding: 4rem 3rem 2rem 3rem;
   text-align: center;
@@ -652,11 +652,42 @@ ul {
 .slick-slide[aria-hidden=true]:not(.slick-cloned) ~ .slick-cloned[aria-hidden=true] {
   transition: transform 0.3s;
   transform: scale(1);
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 /* slide when active/center */
 .slick-slide[aria-hidden=true]:not([tabindex="-1"]) + .slick-cloned[aria-hidden=true] {
   transform: scale(1.25);
   background: #444;
+}
+
+.carrusel-container {
+  background-color: #42B0FF;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+.carrusel-container .carrusel-texto {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrusel-container .carrusel-texto .texto {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  font-family: "Bebas Neue", serif;
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.carrusel-container .carrusel-texto .texto.activo {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=app.css.map */
