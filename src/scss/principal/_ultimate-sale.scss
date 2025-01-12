@@ -1,217 +1,217 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-*, 
-*:before, 
-*:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100%;
-}
-
 .ultimate-sale {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    position: relative;
-
-    .sale-grid {
-        display: grid;
-        grid-template-columns: 450px 1fr 450px;
-        gap: 0;
-        height: calc(100vh - 6rem);
-        width: 100%;
-    }
-
-    .sale-image {
-        position: relative;
-        height: 850px;
-        width: 450px;
-        overflow: hidden;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        &.left {
-            .discount-badge {
-                position: absolute;
-                left: 2rem;
-                bottom: 2rem;
-                background-color: v.$violeta;
-                border-radius: 50%;
-                width: 8rem;
-                height: 8rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                color: v.$blanco;
-                font-family: v.$fuente-secundaria;
-                font-weight: bold;
-                animation: pulse 2s infinite;
-
-                span {
-                    line-height: 1;
-                    &:first-child {
-                        font-size: 2rem;
-                    }
-                    &:last-child {
-                        font-size: 2.5rem;
-                    }
-                }
-            }
-        }
-    }
+    justify-content: space-between;
 
     .sale-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%;
-        width: 400px;
-        margin: 0 auto;
-        padding: 0;
-        background-color: v.$blanco;
-
-        .top-images {
-            width: 400px;
-            height: 200px;
-            margin: 0 auto;
-            margin-top: 0;
-            overflow: hidden;
-            
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
 
         .sale-text {
-            text-align: center;
-            padding: 2rem 0;
-            width: 100%;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 2rem 0;
-
-            .sale-title {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 2rem;
-                
-                .ultimate {
-                    font-family: v.$fuente-principal;
-                    font-size: 5rem;
-                    color: v.$azul;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                    line-height: 0.8;
-                    animation: fadeInDown 1s ease-out;
-                }
-                
-                .sale {
-                    font-family: v.$fuente-principal;
-                    font-size: 8rem;
-                    color: v.$rojo;
-                    font-weight: 900;
-                    letter-spacing: 3px;
-                    line-height: 1;
-                    animation: fadeInUp 1s ease-out;
-                }
-            }
-            
-            .collection-text {
-                font-family: v.$fuente-secundaria;
-                font-size: 1.8rem;
-                letter-spacing: 4px;
-                color: v.$negro;
-                margin: 1rem 0 2rem;
-                font-weight: 500;
-                text-transform: uppercase;
-            }
-            
-            .shop-button {
-                font-family: v.$fuente-secundaria;
-                background-color: v.$violeta;
-                color: v.$blanco;
-                border: none;
-                padding: 0.85rem 2.5rem; // Reduced padding for smaller size
-                border-radius: 8px;
-                font-size: 1rem; // Smaller font size
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                text-transform: uppercase;
-                display: block; // Makes the button a block element
-                margin: 0 auto; // Centers the button horizontally
-                width: fit-content; // Makes the button only as wide as its content
-                min-width: 120px; // Ensures a minimum width
-                text-align: center; // Centers the text inside the button
-                
-                &:hover {
-                    transform: scale(1.05);
-                    background-color: darken(v.$violeta, 10%);
-                }
-            }
+            place-items: center;
         }
 
-        .bottom-image {
-            width: 400px;
-            height: 200px;
-            margin: 0 auto;
-            margin-bottom: 0;
-            overflow: hidden;
-            
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: top center;
-                transform: scale(1.1);
-            }
+    }
+
+    .sale__image--right {
+        width: 500px;
+    }
+
+    .sale__image--left {
+        width: 500px;
+
+    }
+
+
+}
+
+// .ultimate-sale {
+//     width: 100%;
+//     height: 100vh;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+
+//     .sale-grid {
+//         display: grid;
+//         grid-template-columns: 450px 1fr 450px;
+//         gap: 0;
+//         height: calc(100vh - 6rem);
+//         width: 100%;
+//     }
+
+//     .sale-image {
+//         position: relative;
+//         height: 850px;
+//         width: 450px;
+//         overflow: hidden;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//             object-position: center;
+//         }
+
+//         &.left {
+//             .discount-badge {
+//                 position: absolute;
+//                 left: 2rem;
+//                 bottom: 2rem;
+//                 background-color: v.$violeta;
+//                 border-radius: 50%;
+//                 width: 8rem;
+//                 height: 8rem;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+//                 color: v.$blanco;
+//                 font-family: v.$fuente-secundaria;
+//                 font-weight: bold;
+//                 animation: pulse 2s infinite;
+
+//                 span {
+//                     line-height: 1;
+//                     &:first-child {
+//                         font-size: 2rem;
+//                     }
+//                     &:last-child {
+//                         font-size: 2.5rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .sale-content {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         height: 100%;
+//         width: 400px;
+//         margin: 0 auto;
+//         padding: 0;
+//         background-color: v.$blanco;
+
+//         .top-images {
+//             width: 400px;
+//             height: 200px;
+//             margin: 0 auto;
+//             margin-top: 0;
+//             overflow: hidden;
+
+//             img {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//                 object-position: center;
+//             }
+//         }
+
+.sale-text {
+
+    .sale-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .ultimate {
+            font-size: 10rem;
+            color: v.$azul;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 0.8;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .sale {
+            font-size: 15rem;
+            color: v.$rojo;
+            font-weight: 900;
+            letter-spacing: 3px;
+            line-height: 1;
+            animation: fadeInUp 1s ease-out;
         }
     }
 
-    .carrusel-container {
-        background-color: v.$azul;
-        height: 6rem;
+    .collection-text {
+        font-family: v.$fuente-secundaria;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+        color: v.$negro;
+        margin: 1rem 0 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .shop-button {
+        font-family: v.$fuente-secundaria;
+        background-color: v.$violeta;
+        color: v.$blanco;
+        border: none;
+        padding: 0.85rem 2.5rem; // Reduced padding for smaller size
+        border-radius: 8px;
+        font-size: 1rem; // Smaller font size
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        display: block; // Makes the button a block element
+        margin: 0 auto; // Centers the button horizontally
+        width: fit-content; // Makes the button only as wide as its content
+        min-width: 120px; // Ensures a minimum width
+        text-align: center; // Centers the text inside the button
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: darken(v.$violeta, 10%);
+        }
+    }
+}
+
+.bottom-image {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        transform: scale(1.1);
+    }
+}
+
+.carrusel-container {
+    background-color: v.$azul;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .texto-wrapper {
         display: flex;
-        align-items: center;
-        
-        .texto-wrapper {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            
-            .texto {
-                font-family: v.$fuente-principal;
-                color: v.$blanco;
-                font-size: 3rem;
-                text-transform: uppercase;
-                font-weight: 700;
-                white-space: nowrap;
-            }
+        justify-content: space-around;
+        width: 100%;
+
+        .texto {
+            font-family: v.$fuente-principal;
+            color: v.$blanco;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            white-space: nowrap;
         }
     }
 }
@@ -248,97 +248,5 @@ body {
     }
     100% {
         transform: scale(1);
-    }
-}
-
-// Responsive adjustments
-@include m.telefono {
-    .ultimate-sale {
-        .sale-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .sale-image {
-            height: auto;
-            width: 100%;
-        }
-        
-        .sale-content {
-            width: 100%;
-            padding: 0;
-            
-            .top-images,
-            .bottom-image {
-                width: 100%;
-                height: 150px;
-            }
-
-            .sale-text {
-                padding: 2rem 0;
-                
-                .sale-title {
-                    .ultimate {
-                        font-size: 3.5rem;
-                    }
-                    .sale {
-                        font-size: 6rem;
-                    }
-                }
-            }
-        }
-
-        .carrusel-container {
-            height: 5rem;
-            
-            .texto-wrapper {
-                .texto {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-}
-
-@include m.tablet {
-    .ultimate-sale {
-        .sale-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-        
-        .sale-content {
-            width: 100%;
-            
-            .top-images,
-            .bottom-image {
-                width: 100%;
-                height: 180px;
-            }
-        }
-    }
-}
-
-@include m.desktop {
-    .ultimate-sale {
-        .sale-grid {
-            grid-template-columns: 450px 1fr 450px;
-        }
-        
-        .sale-content {
-            width: 400px;
-            
-            .top-images,
-            .bottom-image {
-                width: 400px;
-                height: 200px;
-            }
-        }
-    }
-}
-
-@include m.desktopXL {
-    .ultimate-sale {
-        .sale-content {
-            width: 400px;
-        }
     }
 }
