@@ -1,0 +1,113 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.promo-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    align-items: center;
+    background-image: url('../../src/img/BG.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+
+    .promo-text {
+        max-width: 40%;
+
+        h1 {
+            font-size: 36px;
+            color: v.$negro;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: v.$gris;
+            line-height: 1.6;
+        }
+
+        .cta {
+            margin-top: 20px;
+
+            button {
+                background-color: v.$violeta;
+                color: v.$blanco;
+                border: none;
+                padding: 15px 30px;
+                font-size: 16px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .promo-timer {
+        margin-top: 2rem;
+
+        .temporizador {
+            display: flex;
+            gap: 2rem;
+
+            &__valor {
+                display: flex;
+                flex-direction: column;
+                p {
+                    display: inline-block;
+                    padding: 10px 15px;
+                    background-color: v.$blanco;
+                    color: v.$negro;
+                    border-radius: 5px;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+.carousel {
+    position: relative;
+    max-width: 50%;
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .carousel-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+
+        button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: v.$blanco;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    }
+
+    .carousel-indicators {
+        text-align: center;
+        margin-top: 10px;
+
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: v.$gris;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.active {
+                background-color: v.$azul;
+            }
+        }
+    }
+}

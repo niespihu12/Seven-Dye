@@ -946,4 +946,97 @@ ul {
   .weekly-categories .categories-container .categories-slider .category-item {
     min-width: calc((100% - 6rem) / 4);
   }
+}
+.promo-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  align-items: center;
+  background-image: url("../../src/img/BG.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.promo-container .promo-text {
+  max-width: 40%;
+}
+.promo-container .promo-text h1 {
+  font-size: 36px;
+  color: #272328;
+  margin: 0;
+}
+.promo-container .promo-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+.promo-container .promo-text .cta {
+  margin-top: 20px;
+}
+.promo-container .promo-text .cta button {
+  background-color: #FF77E5;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.promo-container .promo-timer {
+  margin-top: 2rem;
+}
+.promo-container .promo-timer .temporizador {
+  display: flex;
+  gap: 2rem;
+}
+.promo-container .promo-timer .temporizador__valor {
+  display: flex;
+  flex-direction: column;
+}
+.promo-container .promo-timer .temporizador__valor p {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #FFFFFF;
+  color: #272328;
+  border-radius: 5px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 50%;
+}
+.carousel img {
+  width: 100%;
+  border-radius: 5px;
+}
+.carousel .carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel .carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.carousel .carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+.carousel .carousel-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel .carousel-indicators span.active {
+  background-color: #42B0FF;
 }/*# sourceMappingURL=app.css.map */
