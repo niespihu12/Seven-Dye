@@ -7,6 +7,7 @@
   <title>SevenDye</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
@@ -241,41 +242,424 @@
     </div>
   </section>
 
-  <section class="slick-carousel">
-    <div>
-      <div class="test">
-        <h1>Slide 1</h1>
-        <p>Excepteur sint <strong>occaecat cupidatat</strong> non proident.</p>
-      </div>
-    </div>
-    <div>
-      <div class="test">
-        <h1>Slide 2</h1>
-        <p>Lorem ipsom <strong>occaecat cupidatat</strong> proident.</p>
-      </div>
-    </div>
-    <div>
-      <div class="test">
-        <h1>Slide 3</h1>
-        <p>Excepteur sint <strong>occaecat cupidatat</strong> non proident.</p>
-      </div>
+  <!-- apartado del video y fotos de influencer -->
+  <section class="community-section">
+    <div class="section-header">
+        <h2>Dye to be Seen</h2>
+        <p>Get inspired by the best looks from our community and share your authenticity. Upload your photo or video, or share it on social media with #DynamicLooks. Wear your life in color and join the Seven Dye movement!</p>
     </div>
 
-    <div>
-      <div class="test">
-        <h1>Slide 4</h1>
-        <p>Lorem sint <strong>ipsom cupidatat</strong> proident.</p>
-      </div>
-    </div>
-    <div>
-      <div class="test">
-        <h1>Slide 5</h1>
-        <p>Lorem sint <strong>ipsom cupidatat</strong> proident.</p>
-      </div>
+    <div class="featured-video">
+        <video muted>
+            <source src="./src/img/video-influ.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <div class="play-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
     </div>
 
-  </section>
+    <div class="community-grid">
+        <!-- Card 1 -->
+        <div class="community-card">
+            <div class="card-inner">
+                <div class="card-front">
+                  <img src="/src/img/style-model-1.jpg" alt="Street Style Look">
+                </div>
+                <div class="card-back">
+                    <h3>Street Style</h3>
+                    <p>Rocking our tie-dye hoodie with urban vibes</p>
+                    <div class="social-share">
+                        <p class="share-text">¡Comparte tu estilo en redes!</p>
+                        <div class="social-buttons">
+                            <a href="https://www.instagram.com/sevendye_/" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>X</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@sevendye_?lang=es" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="community-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="src/img/style-model-2.jpg" alt="Summer Vibes Look">
+                </div>
+                <div class="card-back">
+                    <h3>Summer Vibes</h3>
+                    <p>Casual tie-dye tee perfect for sunny days</p>
+                    <div class="social-share">
+                        <p class="share-text">¡Comparte tu estilo en redes!</p>
+                        <div class="social-buttons">
+                            <a href="https://www.instagram.com/sevendye_/" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>X</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@sevendye_?lang=es" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="community-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./src/img/style-model-3.jpg" alt="Sport Style Look">
+                </div>
+                <div class="card-back">
+                    <h3>Sport Style</h3>
+                    <p>Athletic look with our tie-dye collection</p>
+                    <div class="social-share">
+                        <p class="share-text">¡Comparte tu estilo en redes!</p>
+                        <div class="social-buttons">
+                            <a href="https://www.instagram.com/sevendye_/" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-btn twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>X</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@sevendye_?lang=es" class="social-btn tiktok">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Apartadoo de las ofertas -->
+
+<section class="products-section">
+  <h2 class="section-title">OFFERS</h2>
+
+  <div class="products-carousel">
+      <div class="carousel-container">
+          <div class="carousel-track">
+              <!-- Product Card 1 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta1.png" alt="Sugary Bliss Denim Jacket">
+                      <div class="quick-actions">
+                        <button class="favorite" aria-label="Add to favorites">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="quick-view" aria-label="Quick view">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Sugary Bliss Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 2 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta2.png" alt="Navy Nebula Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Navy Nebula Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 3 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta3.png" alt="Midnight Mirage Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Midnight Mirage Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 4 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta4.png" alt="Eternal Cosmos Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Eternal Cosmos Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 5 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta1.png" alt="Rainbow Dream Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Rainbow Dream Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 6 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta2.png" alt="Cosmic Wave Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Cosmic Wave Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 7 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta3.png" alt="Aurora Lights Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Aurora Lights Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product Card 8 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="./src/img/chaqueta4.png" alt="Galaxy Burst Denim Jacket">
+                      <div class="quick-actions">
+                          <button class="favorite" aria-label="Add to favorites">
+                              <i class="far fa-heart"></i>
+                          </button>
+                          <button class="quick-view" aria-label="Quick view">
+                              <i class="fas fa-eye"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="product-info">
+                      <h3 class="product-title">
+                          <a href="#">Galaxy Burst Denim Jacket T-Shirt Seven Best Tiedye Colorful</a>
+                      </h3>
+                      <div class="product-price">$102.40</div>
+                      <div class="product-rating">
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                          </div>
+                          <span class="rating-count">(65)</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="carousel-nav">
+          <button class="prev" aria-label="Previous">
+              <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next" aria-label="Next">
+              <i class="fas fa-chevron-right"></i>
+          </button>
+      </div>
+  </div>
+</section>
+
+<!-- Apartado de las reseñas -->
+
+<section class="slick-carousel">
+  <div>
+    <div class="test">
+      <h1>Slide 1</h1>
+      <p>Excepteur sint <strong>occaecat cupidatat</strong> non proident.</p>
+    </div>
+  </div>
+  <div>
+    <div class="test">
+      <h1>Slide 2</h1>
+      <p>Lorem ipsom <strong>occaecat cupidatat</strong> proident.</p>
+    </div>
+  </div>
+  <div>
+    <div class="test">
+      <h1>Slide 3</h1>
+      <p>Excepteur sint <strong>occaecat cupidatat</strong> non proident.</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="test">
+      <h1>Slide 4</h1>
+      <p>Lorem sint <strong>ipsom cupidatat</strong> proident.</p>
+    </div>
+  </div>
+  <div>
+    <div class="test">
+      <h1>Slide 5</h1>
+      <p>Lorem sint <strong>ipsom cupidatat</strong> proident.</p>
+    </div>
+  </div>
+
+</section>
 
   <section class="signup">
 
@@ -384,6 +768,8 @@
   <script src="build/js/slider.js"></script>
   <script src="build/js/weekly-categories.js"></script>
   <script src="build/js/descuento.js"></script>
+  <script src="build/js/community-section.js"></script>
+  <script src="build/js/ofertas.js"></script>
 
 </body>
 
