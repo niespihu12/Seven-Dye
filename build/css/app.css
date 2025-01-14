@@ -446,6 +446,9 @@ ul {
   box-shadow: 0 2px 4px;
 }
 
+.footer {
+  background-color: white;
+}
 .footer__servicios {
   display: flex;
   justify-content: space-between;
