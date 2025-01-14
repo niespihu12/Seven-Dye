@@ -1,127 +1,99 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-
-ul {
-    list-style: none;
-}
-
-.slick-carousel {
-    margin: 2rem auto 1rem auto;
-    max-width: 650px;
-}
-
-.slick-slide {
-    margin: 0 30px;
-}
-
-
-.slick-list {
-    margin: 0 -30px;
-}
-
-
-.slick-next::before,
-.slick-prev::before {
-    color: #999;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.test {
-    background: rgba(v.$blanco, .8);
-    color: white;
-    padding: 4rem 3rem 2rem 3rem;
+.testimonial-general{
     text-align: center;
-    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, .35);
-    min-height: 130px;
-    // transition: .2s ease-in-out;
-
-    h1 {
-        color: white;
-        letter-spacing: 0.04em;
-        font-weight: normal;
-        font-size: 2rem;
-        opacity: 0;
-        margin: 0;
-        padding: 0 0 1rem 0;
-        transition: .3s ease;
-    }
-
-    p {
-        opacity: 0;
-        margin: 0;
-        padding: 0;
-        font-weight: 300;
-        font-family: 'Inter', sans-serif;
-        transition: .3s ease;
-
-    }
+    background-image: url('../../src/img/imagen-fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
 }
 
-.slick-current {
-    .test {
-        background: #444;
-        // -webkit-transform: scale(1.25);
-        // -moz-transform: scale(1.25);
-        transform: scale(1.25);
-
-        // transition-delay: 0s;
-        h1,
-        p {
-            opacity: 1;
-        }
-    }
-
+.testimonial-general h2{
+    color: v.$blanco;
+}
+.testimonial-general h3{
+    text-align: left;
 }
 
-.slick-list {
-    padding: 45px 80px !important;
-    // margin-left: 30px !important;
+.shadow-effect {
+    background: #fff;
+    padding: 1rem ; // Incrementa el espacio interno
+    border-radius: 8px; // Aumenta el redondeo
+    text-align: center;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), 0 20px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
 }
 
-.slick-dots {
-    display: flex !important;
-    justify-content: center;
-    height: 2rem;
+#customers-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 20px 17px 0;
+    font-weight: 300;
+    text-align: left;
+}
+
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: v.$azul;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: v.$blanco;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+
+#customers-testimonials .item {
+    text-align: center;
+    margin-bottom: 80px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    margin: 0 auto 17px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: v.$azul;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
     width: 100%;
-    position: absolute;
-    max-width: 750px;
-    bottom: -2.5rem !important;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+    text-align: center;
 }
 
-.slick-dots li {
-    display: block;
-    background: none;
-    border: 3px solid gray;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    margin: 0 5px;
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
 }
 
-.slick-dots li button:before {
-    content: none;
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: v.$azul;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
 }
-
-.slick-dots li.slick-active {
-    background: red !important;
-    border: 3px solid red;
-}
-
-/* slide when not active/center*/
-.slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
-    transition: transform 0.3s;
-    transform: scale(1);
-    background: rgba(v.$blanco, .8);
-}
-
-/* slide when active/center */
-.slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
-    transform: scale(1.25);
-    background: #444;
-}
-
