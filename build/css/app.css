@@ -1824,7 +1824,7 @@ ul {
   font-weight: 800;
 }
 .arrival__contenido--botones button:hover {
-  background-color: rgb(255, 93.5, 224.125);
+  background-color: rgb(255, 88.4, 223.15);
   cursor: pointer;
 }
 .arrival__contenido--productos {
@@ -1848,7 +1848,7 @@ ul {
   color: #FFFFFF;
 }
 .arrival__contenido--mas:hover {
-  background-color: rgb(255, 93.5, 224.125);
+  background-color: rgb(255, 88.4, 223.15);
 }
 
 .producto {

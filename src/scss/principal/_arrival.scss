@@ -32,7 +32,7 @@
             color: v.$blanco;
             font-weight: 800;
             &:hover{
-                background-color: darken(v.$violeta, 5%);
+                background-color: darken(v.$violeta, 6%);
                 cursor: pointer;
             }
         }
@@ -61,7 +61,7 @@
         }
 
         &:hover{
-            background-color: darken(v.$violeta, 5%);
+            background-color: darken(v.$violeta, 6%);
         }
     }
 }
