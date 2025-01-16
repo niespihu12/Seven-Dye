@@ -29,6 +29,7 @@ p{
     font-family: v.$fuente-secundaria;
     color: v.$negro;
     line-height: 1.5;
+    font-size: 1.6rem;
 }
 
 .contenedor{
@@ -68,4 +69,8 @@ img{
 }
 ul{
     list-style: none;
+}
+label{
+    font-size: 1.6rem;
+    font-family: v.$fuente-secundaria;
 }
